@@ -14,10 +14,12 @@
 
  function  decrease (){
     counterValue -=1;
+    spanRef.textContent = counterValue;
  };
 
  function  increase (){
     counterValue +=1;
+    spanRef.textContent = counterValue;
  };
 
 

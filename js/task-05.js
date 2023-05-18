@@ -4,7 +4,6 @@
 
 const inputRef =  document.querySelector('#name-input');
 const spanRef = document.querySelector('#name-output');
-console.log(spanRef)
 
 inputRef.addEventListener('input', onInputChange);
 function onInputChange(event) {
