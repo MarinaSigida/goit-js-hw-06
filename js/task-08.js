@@ -14,7 +14,7 @@ function onFormSubmit (event){
     event.preventDefault();
     const {email, password}  = event.target.elements;
 
-    if (email === '' || password === ''){
+    if (email.value.trim() === '' || password.value.trim() === ''){
         alert ("Bсі поля повинні бути заповнені!")
         return};
     
