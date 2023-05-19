@@ -12,16 +12,17 @@ form.addEventListener('submit', onFormSubmit)
 
 function onFormSubmit (event){
     event.preventDefault();
+    const {email, password}  = event.target.elements;
 
-    if(form.email ===''|| form.password ===''){
-        alert «Bсі поля повинні бути заповнені»};
+    if (email === '' || password === ''){
+        alert ("Bсі поля повинні бути заповнені!")
+        return};
     
-        else {
-    const formData = new formData(event.currentTarget);
-    formData.forEach (value, name) => {
-        console.log(name);
-        console.log(value);
-    }
+        const formData = {
+            email: email.value,
+            password:  password.value,
         }
-}
+        console.log (formData);
+        event.target.reset();
+    };
 
