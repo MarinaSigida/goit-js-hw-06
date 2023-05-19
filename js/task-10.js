@@ -14,7 +14,7 @@ const btnCreate = document.querySelector('[data-create]');
 const btnDestroy = document.querySelector('[data-destroy]');
 const numberEl = document.querySelector('[type=number]');
 const boxesEl = document.querySelector('#boxes');
-const boxesTempEl = [];
+const boxesArray = [];
 
 btnCreate.addEventListener ('click', createBoxes);
 btnDestroy.addEventListener ('click', destroyBoxes);
@@ -30,9 +30,9 @@ function createBoxes() {
       boxEl.style.height = sizeFn;
       boxEl.style.margin = "20px";
       boxEl.style.backgroundColor = getRandomHexColor();
-      boxesTempEl.push(boxEl);
+      boxesArray.push(boxEl);
 
-      boxesEl.append(...boxesTempEl);
+      boxesEl.append(...boxesArray);
   }
 }
 
