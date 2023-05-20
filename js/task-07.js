@@ -4,10 +4,12 @@
 
 const inputRef = document.querySelector('#font-size-control');
 const spanRef = document.querySelector('#text');
-
+spanRef.style.fontSize = '56px';
 
 inputRef.addEventListener('input', onSpanChange);
 
 function onSpanChange(event) {
     spanRef.style.fontSize=`${inputRef.value}px`;
 }
+
+
